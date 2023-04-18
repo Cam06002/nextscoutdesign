@@ -12,6 +12,10 @@
     padding: .85rem;
     max-width: 100%;
   }
+
+  .gapper{
+    margin: .5rem;
+  }
   
   .backToHome {
     margin: 3rem 0 0;

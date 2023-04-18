@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@component/styles/Home.module.css'
 import Layout, { siteTitle} from '../../components/layout'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,89 +16,69 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={styles.main}>
-      <div className={styles.description}>
-          <p>
-            Services & Pricing
-          </p>
-          <p>
-            Contact
-          </p>
-          <p>
-            Demos
-          </p>
-          <p>
-            About Us
-          </p>
-        </div>
-
+      
         <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
+          <p className={styles.description}>
+            At Scout Design, we strive to bring you the unique solutions your
+            business needs. Whether you need a basic website for getting your 
+            business online, cutting edge tools for managing your business, or
+            a full stack of business solutions, we have you covered. Take a look
+            at our demos below to see what Scout Design can do for you!
+          </p>
         </div>
 
         <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="/demos/websites"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+              Websites <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
+              Learn about our approach to building
+              unique business websites.
             </p>
-          </a>
+          </Link>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="/demos/buisiness_tools"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+              Business Tools <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+              Learn about how Scout Design builds
+              tools geared for your business.
             </p>
-          </a>
+          </Link>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="/demos/data_page"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
+              Data <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+              Learn about how Scout Design can leverage data_page
+              to help your business succeed.
             </p>
-          </a>
+          </Link>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="/demos/ecommerce"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
+              Ecommerce <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
+              Learn how an e-commerce page can add a new revenue stream
+              to your business.
             </p>
-          </a>
+          </Link>
         </div>
       </main>
     </Layout>
